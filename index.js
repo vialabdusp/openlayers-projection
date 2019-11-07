@@ -2,10 +2,9 @@ import 'ol/ol.css';
 import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import Stamen from 'ol/source/Stamen';
-import { get as getProjection} from 'ol/proj';
+import { fromLonLat, get as getProjection} from 'ol/proj';
 import proj4 from 'proj4';
 import { register } from 'ol/proj/proj4'; 
-import { fromLonLat } from 'ol/proj';
 
 let center = [-71.091, 42.376]
 let newProjCode = "EPSG:2249"
